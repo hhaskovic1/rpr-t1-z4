@@ -2,15 +2,15 @@ package ba.unsa.etf.cetvrti;
 
 public class Predmet {
     private String nazivPredmeta;
-    private int sifra_Predmeta, brojStudenata;
-    private final int max_Br;
+    private int sifraPredmeta, brojStudenata;
+    private final int maxBr;
     private Student [] nizStudenata = null;
 
-    public Predmet (String nazivPredmeta, int sifra_Predmeta, int max_Br) {
+    public Predmet (String nazivPredmeta, int sifraPredmeta, int maxBr) {
         this.nazivPredmeta = nazivPredmeta;
-        this.sifra_Predmeta = sifra_Predmeta;
+        this.sifraPredmeta = sifraPredmeta;
         this.brojStudenata = 0;
-        this.max_Br = max_Br;
+        this.maxBr = maxBr;
         nizStudenata=new Student[50];
     }
     public String getNazivPredmeta() {
@@ -19,11 +19,11 @@ public class Predmet {
     public void setNazivPredmeta (String nazivPredmeta) {
         this.nazivPredmeta = nazivPredmeta;
     }
-    public int getSifra_Predmeta() {
-        return sifra_Predmeta;
+    public int getSifraPredmeta() {
+        return sifraPredmeta;
     }
-    public void setSifra_Predmeta (int sifra_Predmeta) {
-        this.sifra_Predmeta = sifra_Predmeta;
+    public void setSifraPredmeta (int sifraPredmeta) {
+        this.sifraPredmeta = sifraPredmeta;
     }
     public int getBrojStudenata() {
         return brojStudenata;
@@ -31,11 +31,11 @@ public class Predmet {
     public void setBrojStudenata (int brojStudenata) {
         this.brojStudenata = brojStudenata;
     }
-    public int getMax_Br() {
-        return max_Br;
+    public int getMaxBr() {
+        return maxBr;
     }
     public void upisiStudenta(Student s){
-        if(brojStudenata<max_Br){
+        if(brojStudenata<maxBr){
             nizStudenata[brojStudenata]=s;
             brojStudenata++;
         }

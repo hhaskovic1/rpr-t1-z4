@@ -53,7 +53,7 @@ public class Main {
                 int pamti = 0;
 
                 for(int k=0; k<i; k++) {
-                    if(sifra==predmeti[k].getSifra_Predmeta()) {
+                    if(sifra==predmeti[k].getSifraPredmeta()) {
                         pamti=k;
                         break;
                     }
@@ -66,7 +66,7 @@ public class Main {
                         System.out.println("Student " + studenti[k].getIme() + " " + studenti[k].getPrezime() + " je upisan na predmet " + predmeti[pamti].getNazivPredmeta());
                         break;
                     }
-                    else if(predmeti[pamti].getBrojStudenata()>=predmeti[pamti].getMax_Br()) {
+                    else if(predmeti[pamti].getBrojStudenata()>=predmeti[pamti].getMaxBr()) {
                         System.out.println("Predmet je popunjen");
                     }
                 }
@@ -82,7 +82,7 @@ public class Main {
                 int pamti = 0;
 
                 for(int k=0; k<i; k++) {
-                    if(sifra==predmeti[k].getSifra_Predmeta()) {
+                    if(sifra==predmeti[k].getSifraPredmeta()) {
                         pamti=k;
                         break;
                     }
@@ -128,7 +128,7 @@ public class Main {
                 System.out.println("Unesite sifru predmeta: ");
                 int sifra= scanner.nextInt();
                 for(int k=0; k<i; k++) {
-                    if(sifra==predmeti[k].getSifra_Predmeta()) {
+                    if(sifra==predmeti[k].getSifraPredmeta()) {
 
                         for(int l=0; l<j; l++)
                         {
