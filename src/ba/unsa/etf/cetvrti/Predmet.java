@@ -13,25 +13,25 @@ public class Predmet {
         this.max_Br = max_Br;
         nizStudenata=new Student[50];
     }
-    public String getNazivPredmeta ( ) {
+    public String getNazivPredmeta() {
         return nazivPredmeta;
     }
     public void setNazivPredmeta (String nazivPredmeta) {
         this.nazivPredmeta = nazivPredmeta;
     }
-    public int getSifra_Predmeta ( ) {
+    public int getSifra_Predmeta() {
         return sifra_Predmeta;
     }
     public void setSifra_Predmeta (int sifra_Predmeta) {
         this.sifra_Predmeta = sifra_Predmeta;
     }
-    public int getBrojStudenata ( ) {
+    public int getBrojStudenata() {
         return brojStudenata;
     }
     public void setBrojStudenata (int brojStudenata) {
         this.brojStudenata = brojStudenata;
     }
-    public int getMax_Br ( ) {
+    public int getMax_Br() {
         return max_Br;
     }
     public void upisiStudenta(Student s){
@@ -39,7 +39,6 @@ public class Predmet {
             nizStudenata[brojStudenata]=s;
             brojStudenata++;
         }
-
     }
     public void ispisiStudenta(Student s){
         for(int i=0;i<brojStudenata-1;i++) {

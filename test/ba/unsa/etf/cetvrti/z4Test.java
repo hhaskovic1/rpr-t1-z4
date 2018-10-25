@@ -93,4 +93,14 @@ public class z4Test {
         assertEquals("1. Haskovic Hasan (17717)"+"\n", predmet.toString());
 
     }
+    @org.junit.jupiter.api.Test
+    public void getNazivPredmetaTest() {
+        Predmet predmet =new Predmet("MLTI",9,10);
+        assertEquals("MLTI", predmet.getNazivPredmeta());
+    }
+    @org.junit.jupiter.api.Test
+    public void getMax_BrTest() {
+        Predmet predmet =new Predmet("MLTI",9,10);
+        assertEquals(10, predmet.getMax_Br());
+    }
 }
