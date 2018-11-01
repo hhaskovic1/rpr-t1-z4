@@ -1,4 +1,4 @@
-package ba.unsa.etf.cetvrti;
+package ba.unsa.etf.rpr.tutorijal01;
 
 public class Student {
     private String ime,prezime;
